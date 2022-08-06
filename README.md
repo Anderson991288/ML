@@ -1,6 +1,12 @@
+
 # **Machine Learning**
 
 ![Screenshot from 2022-06-29 15-33-46](https://user-images.githubusercontent.com/68816726/176379219-df9bc3e3-f504-4ff3-a65a-d39a6fdda01f.png)
+
+
+#如何加速Google Colab執行速度:
+上方"執行階段"->"變更執行階段類型"->硬體加速器選擇"GPU"->"儲存"
+
 
 
 ## Regression
