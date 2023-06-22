@@ -28,6 +28,13 @@ class Classifier(nn.Module):
         return x
 ```
 
+# 參數調整:
+```
+* epoch = 80
+* batch_size = 64
+```
+
+
 # Result :
 ```
 * 訓練: 損失 = 0.26892, 準確率 = 0.91167
