@@ -33,9 +33,10 @@ class Classifier(nn.Module):
 * epoch = 80
 * batch_size = 64
 ```
-* [Code](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_50.ipynb)
+# Code:
+[CNN_ResNet_50.ipynb](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_50.ipynb)
 
-# Result :
+# Result:
 ```
 * 訓練: 損失 = 0.26892, 準確率 = 0.91167
 * 驗證: 損失 = 1.73879, 準確率 = 0.60824
