@@ -33,7 +33,7 @@ class Classifier(nn.Module):
 * epoch = 80
 * batch_size = 64
 ```
-# [Code](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_50.ipynb):
+* [Code](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_50.ipynb)
 
 # Result :
 ```
