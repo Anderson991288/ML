@@ -1,4 +1,4 @@
-# CNN : 使用 ResNet-50 作為基礎架構
+# CNN : 使用 ResNet 作為基礎架構
 ### Food Classification:
   
 ● The images are collected from the food-11 dataset classified into 11 classes.
@@ -27,6 +27,23 @@ class Classifier(nn.Module):
         x = self.model(x)
         return x
 ```
+# ResNet-18
+```
+class Classifier(nn.Module):
+    def __init__(self):
+        super(Classifier, self).__init__()
+
+        # ResNet-18 模型
+        self.resnet = models.resnet18(pretrained=False)
+
+        # 替換最後一層全連接層
+        num_features = self.resnet.fc.in_features
+        self.resnet.fc = nn.Linear(num_features, 11)
+
+    def forward(self, x):
+        x = self.resnet(x)
+        return x
+```
 
 # 參數調整:
 ```
@@ -37,8 +54,16 @@ class Classifier(nn.Module):
 [CNN_ResNet_50.ipynb](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_50.ipynb)
 
 # Result:
+* ResNet-50
+  
 ```
 * 訓練: 損失 = 0.26892, 準確率 = 0.91167
 * 驗證: 損失 = 1.73879, 準確率 = 0.60824
 ```
 
+* ResNet-18
+  
+```
+* 訓練 損失 = 0.15401, 準確率 = 0.94834
+* 驗證 損失 = 2.48382, 準確率 = 0.49006
+```
