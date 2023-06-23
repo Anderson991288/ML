@@ -52,6 +52,7 @@ class Classifier(nn.Module):
 ```
 # Code:
 [CNN_ResNet_50.ipynb](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_50.ipynb)
+
 [CNN_ResNet_18.ipynb](https://github.com/Anderson991288/Machine-Learning/blob/main/CNN/CNN_ResNet_18.ipynb)
 
 # Result:
